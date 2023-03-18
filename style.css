@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+    color: rgb(255, 255, 255);
+    background-color: rgb(29, 29, 29);
+    font-family: 'Permanent Marker', cursive, sans-serif;
+}
+
+.img-container {
+    width: 630px;
+    height: 630px;
+    margin: 100px auto;
+    text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.img-container img {
+    opacity: 0.8;
+    transition: 1s;
+
+}
+.img-container img:hover {
+      scale: 1.1;
+      opacity: 1;
+      transition: 1s;
+      cursor: pointer;
+}
+
+.reveal-container {
+    width: 50vh;
+    height: 60vh;
+    margin: auto;
+    margin-top: 10vh;
+    text-align: center;
+}
+
+.reveal-container a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 50px;
+    position: absolute;
+    top: 20%; left: 20%;
+    z-index: 10;
+}
+
+.reveal-container a:hover {
+    color: rgb(0, 255, 170);
+}
+
+.reveal-container:hover > a {
+    z-index: 0;
+    transition: 1s;
+    transform: translateY(-100%);
+}
+
+.reveal-container img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    position: absolute;
+    top: 40%; left: 40%;
+    transition: 2s;
+}
+
+.reveal-quotes {
+    display: grid;
+    grid-template-columns: 30% 30%;
+    justify-content: space-between;
+    width: 80%;
+    height: 500px;
+    margin: auto;
+    margin-top: 20%;
+}
+.reveal-quotes blockquote {
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+}
+.reveal-quotes blockquote.atw cite {
+    color:rgb(96, 199, 236);
+}
+.reveal-quotes blockquote.mic cite {
+    color:rgb(253, 241, 181);
+}
+
+
+.reveal-container img:nth-child(2) {
+    transform: translateX(5%) translateY(5%);
+    z-index: 10;
+}
+.reveal-container img:nth-child(3) {
+    transform: translate(5%);
+    z-index: 1;
+}
+.reveal-container img:nth-child(4) {
+    transform: rotate(-5deg);
+    z-index: 2;
+}
+.reveal-container img:nth-child(5) {
+    transform: translate(5%);
+    z-index: 3;
+}
+.reveal-container img:nth-child(6) {
+    z-index: 4;
+}
+.reveal-container img:nth-child(7) {
+    transform: translate(15%);
+    z-index: 5;
+}
+.reveal-container img:nth-child(8) {
+    z-index: 6;
+}
+.reveal-container img:nth-child(9) {
+    z-index: 7;
+}
+
+
+.reveal-container:hover > img:nth-child(2) {
+    transform: translateX(-5%) translateY(-5%) scale(0.9);
+    transition: 2s;
+}
+.reveal-container:hover > img:nth-child(3) {
+    transform: translateX(100%) translateY(60%);
+    transition: 2s;
+}
+.reveal-container:hover > img:nth-child(4) {
+    transform: translateX(-120%) translateY(-70%) rotate(-20deg) scale(0.8);;
+    transition: 2s;
+}
+.reveal-container:hover > img:nth-child(5) {
+    transform: translateX(100%) translateY(60%) rotate(-10deg);
+    transition: 2s;
+}
+.reveal-container:hover > img:nth-child(5) {
+    transform: translateX(100%) translateY(60%) rotate(-10deg);
+    transition: 2s;
+}
+.reveal-container:hover > img:nth-child(6) {
+    transform: translateX(-110%) translateY(100%);
+    transition: 2s;
+}
+.reveal-container:hover > img:nth-child(7) {
+    transform: translateY(-100%) scale(0.8);
+    transition: 2s;
+}
+.reveal-container:hover > img:nth-child(8) {
+    transform: translateX(100%) translateY(-100%) rotate(10deg);
+    transition: 2s;
+}
+.reveal-container:hover > img:nth-child(9) {
+    transform: translateX(-50%) translateY(130%);
+    transition: 2s;
+}
+
+
+
+
+
+
+
+
+
+
