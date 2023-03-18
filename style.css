@@ -23,7 +23,6 @@ body {
 }
 .img-container img {
     opacity: 0.8;
-
 }
 
 .reveal-container {
@@ -32,19 +31,6 @@ body {
     margin: auto;
     margin-top: 10vh;
     text-align: center;
-}
-
-.reveal-container a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-size: 50px;
-    position: absolute;
-    top: 20%; left: 20%;
-    z-index: 10;
-}
-
-.reveal-container a:hover {
-    color: rgb(0, 255, 170);
 }
 
 .reveal-container img {

@@ -1,8 +1,10 @@
 const imgContainer = document.querySelector(".img-container");
 const revealContainer = document.querySelector(".reveal-container");
-const revealQuotes = document.querySelector(".reveal-quotes");
 
 function run_anim() {
+  document.getElementsByClassName("atw")[0].classList.remove("hidden");
+  document.getElementsByClassName("mic")[0].classList.remove("hidden");
+
   var tfms = {
     "fabulous.jpg":      "translate(140%, 60%)",
     "bjj.png":           "translate(-120%, -70%) rotate(-20deg) scale(0.8)",
@@ -28,7 +30,6 @@ function run_anim() {
 imgContainer.addEventListener("click", () => {
   imgContainer.classList.add("hidden");
   revealContainer.classList.remove("hidden");
-  revealQuotes.classList.remove("hidden");
 
   setTimeout(() => run_anim(), "400");
 });
