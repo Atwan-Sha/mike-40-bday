@@ -14,7 +14,7 @@ function run_anim() {
     "drums.png":         "translateY(300%) rotate(-10deg)",
     "philosophy.png":    "translateY(-100%) scale(1.04)",
     "ska2.gif":          "translateY(330%)",
-    "mike-40-dance.jpg": "translate(100%, -100%) rotate(10deg) scale(1.1)",
+    "mike-40-dance.jpg": "translate(120%, -100%) rotate(10deg) scale(1.1)",
     "ska-mic.gif":       "translate(210%, 70%) rotate(10deg)",
     "ska-atw.gif":       "translate(-200%, 170%) rotate(-10deg)",
   }
@@ -33,3 +33,4 @@ imgContainer.addEventListener("click", () => {
 
   setTimeout(run_anim, "400");
 });
+
