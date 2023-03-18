@@ -2,8 +2,9 @@ const imgContainer = document.querySelector(".img-container");
 const revealContainer = document.querySelector(".reveal-container");
 
 function run_anim() {
-  document.getElementsByClassName("atw")[0].classList.remove("hidden");
-  document.getElementsByClassName("mic")[0].classList.remove("hidden");
+  for (cls_name of ["atw", "mic"]) {
+    document.getElementsByClassName(cls_name)[0].classList.remove("hidden");
+  }
 
   var tfms = {
     "fabulous.jpg":      "translate(140%, 60%)",
@@ -21,7 +22,6 @@ function run_anim() {
   for (img of document.getElementsByTagName('img')) {
     var fname = img.src.split("/").slice(-1)
     if (fname in tfms) {
-      console.log("tfms", fname, tfms[fname])
       img.style.transform = tfms[fname]
     }
   }
@@ -31,5 +31,5 @@ imgContainer.addEventListener("click", () => {
   imgContainer.classList.add("hidden");
   revealContainer.classList.remove("hidden");
 
-  setTimeout(() => run_anim(), "400");
+  setTimeout(run_anim, "400");
 });
