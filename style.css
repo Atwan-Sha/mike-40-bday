@@ -6,6 +6,10 @@
 .hidden {
     display: none;
 }
+blockquote.hidden {
+    display: block;
+    opacity: 0;
+}
 
 body {
     color: rgb(195, 255, 182);
@@ -35,14 +39,11 @@ body {
     width: 50vh;
     height: 100vh;
     margin: 5vh auto;
-    /* margin-top: vh; */
     text-align: center;
 }
-
 .reveal-container h1 {
     font-size: 50px;
 }
-
 .reveal-container img {
     width: 250px;
     height: auto;
@@ -51,7 +52,6 @@ body {
     top: 50%; left: 42%;
     transition: 2s;
 }
-
 .reveal-quotes {
     display: grid;
     grid-template-columns: 35% 35%;
@@ -65,6 +65,7 @@ body {
     color: white;
     font-family: 'Caveat', cursive;
     font-size: 30px;
+    transition: 5s;
 }
 .reveal-quotes blockquote.atw cite {
     color:rgb(96, 199, 236);
